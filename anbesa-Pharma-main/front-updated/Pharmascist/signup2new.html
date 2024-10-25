@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../CSS/bulma.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <section id="first" class="is-flex is-flex-direction-row">
+        <section class="banner column is-half custom-div is-flex is-align-items-center new-banner">
+            <div class="centered-div">
+            <center>
+                <div class="flex left-content">
+                    <h1 class="has-text-black is-size-3 h1 ml-6 pl-6">Already have an account ?</h1>
+                  <!-- <p class="has-text-black is-size-4 h1">Join thousands of satisfied customers by signing up for our pharmacy family.</p> -->
+                  <a href="login.html"><button  class="h1 is-size-4 px-6 py-2 mt-5  has-text-weight-bold signup-button">Login</button></a>
+                </div> 
+            </center>
+              
+            </div>
+          </section>
+        
+          <section id="tom" class="column is-half tom-div">
+            <div class="box box-shadow box-shadow-large shadow-lg p-6 m-5 mt-5 mt-6">
+              <center>
+                <div>
+                  <img src="../image/Hospital(3).png" alt="">
+                  <img src="../image/Kendil pharma(3).png" alt="">
+                </div>
+                <h1 class="h1 mb-5 is-size-3">Register</h1>
+              </center>
+          
+              <form id="signup-form">
+                <input id="nameInput" class="input px-6 py-2 mb-5 is-rounded is-border-solid is-border-gray" type="text" placeholder="UserName" name = "name" required>
+                <input id="emailInput" class="input px-6 py-2 mb-5 is-rounded is-border-solid is-border-gray" type="email" placeholder="Email" name = "email" required>
+                <input id="passwordInput" class="input px-6 py-2 mb-5 is-rounded is-border-solid is-border-gray" type="password" placeholder="Password" name = "password" minlength="6" required>
+                <!-- <input id="roleInput" class="input px-6 py-2 mb-5 is-rounded is-border-solid is-border-gray" type="text" placeholder="Role:Pharmacist" name = "role" required> -->
+                <select id="roleInput" placeholder="Category" name = "role" type="text" class="input px-6 py-2 mb-5 is-rounded is-border-solid is-border-gray" required>
+                  <option value="Pharmacist">Pharmacist</option>
+               </select>
+
+                <div class="is-flex is-justify-content-between mt-5 login-btn">
+                  <button type="submit" id="signInButton"  class="h1 is-size-5 has-text-size-2 px-6 py-2 ml-5  has-text-weight-bold">Signup</button>
+                </div>
+              </div>
+             </form>
+             <p id="error-message"></p>
+
+          </section>          
+    </section>
+    <!-- <script src="../User/script.js"></script> -->
+    <script src="Fetch-Pharmascit/signupfetch.js"></script>
+  </body>
+</html>

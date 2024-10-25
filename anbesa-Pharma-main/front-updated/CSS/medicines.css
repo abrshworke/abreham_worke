@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e1f6ff;
+}
+li{
+    list-style: none;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+header{
+    background: white;
+}
+.flex {
+padding: 2em;
+display: flex;
+gap: auto;
+max-width: 600px;
+margin: auto;
+justify-content: space-evenly;
+/* border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+#form input {
+    height: 13%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+
+}
+.form-right{
+    margin-right: 80px;
+}
+.buttons{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+#form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form button.button-link {
+    background-color: #007bff;
+}
+
+#form button:hover,
+#form button.button-link:hover {
+    background-color: #45a049;
+}
+
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 70%;
+    margin: 2em auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-detail {
+    margin-bottom: 15px;
+    display: none;
+}
+
+.card-link {
+    text-decoration: none; 
+    display: inline-block;
+    padding: 5px 10px; 
+    margin-right: 5px; 
+    border: 1px solid #ccc; 
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 3px; 
+    cursor: pointer; 
+}
+.edit{
+    background: #4caf50;
+    color: white
+}
+.delete{
+    background: red;
+    color:white;
+}
+.read-more {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.card-link:hover {
+    background-color: #e0e0e0; /
+}
+select {
+    height: 28%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 322px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+} 
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/medicines.css">
+<body>
+    <header class="py-4 px-5 box-shadow box between">  
+            <img src="../image/Kendil pharma(3).png" alt="">        
+    </header>
+    <h1>Pharamticals</h1>
+
+</ul>
+
+<form id="form">
+    <div class="flex">
+      <div class="form-right">
+        <input name = "title" type="text" placeholder="Medicine Name" id = "title">
+        <input name = "detail" type="text" placeholder="Description" id="detail">
+        <input name = "usedfor" type="text" placeholder="Used for" id="usedfor">
+      </div>
+
+      <div>
+        <input name = "price" type="number" placeholder="Price" id="price">
+    <!-- <input name = "category" type="text" placeholder="Category" id="category"> -->
+        <select id="category" placeholder="Category" name = "category" type="text">
+          <option value="Antibiotics">Antibiotics</option>
+          <option value="Painkiller">Painkiller</option>
+       </select>
+      </div>
+   </div> 
+   <div class="buttons"><button type="submit">Add Product</button>
+    <button type="submit" class="button-link">Edit Product</button>
+   </div>
+   
+<!--    <button type="submit" >Edit Product</button> -->
+</form>
+
+<div class="cards"><div class="post-list mt-6 col-md-6 ml-6">
+    <div class="card mt-6 ml-6">
+        <div class="card-body">
+          <h1 class="card-title">Card title</h1>
+          <h6 class="card-subtitle mb-2 text-body-secondary">${post.price} </h6>
+          <div class="card-detail">
+            <p class="card-text">${post.detail}</p>
+            <p class="card-text card-price"> ${post.usedfor} </p>
+            <p class="card-text card-cat">${post.category}</p>
+         </div>
+          <a href="#" class="card-link read-more">Read More</a>
+          <a href="#" class="card-link edit ">Edit</a>
+          <a href="#" class="card-link delete">Delete</a>
+        </div>
+     </div>
+ </div> 
+
+     <!-- <script src="new.js"></script> -->
+     <!-- <script src="type.js"></script> -->
+     <script src="Fetch-Pharmascit/medicinefetch.js"></script>
+     <script src="Fetch-Pharmascit/medicines.js"></script> 
+</body>
+</html>
